@@ -2,7 +2,5 @@
 This react application gives general information about countries.</br>
 
 
-**Demo Video**</br>
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)]([https://youtu.be/vt5fpE0bzSY](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/5450e0f6-9db3-4965-8fc6-5a8607bf31d4)https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/5450e0f6-9db3-4965-8fc6-5a8607bf31d4)
-
-
+**Demo**</br>
+![ezgif com-video-to-gif](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/9e4a2f3a-3b63-47b0-9d92-3dee7acab4f6)
