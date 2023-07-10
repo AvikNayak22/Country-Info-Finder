@@ -26,10 +26,12 @@ Country Info Finder is a web application that allows users to search for informa
 ## Screenshots
 
 **Screenshots 1**
+![Screenshot 2023-07-10 221439](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/5a6106e2-85c1-44d6-9a8a-b847d1a57901)
 
 _Example screenshot of the list of countries_
 
 **Screenshots 2**
+![Screenshot 2023-07-10 221740](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/69192f12-fb0f-4088-9547-9ec4d9b3e2dc)
 
 _Example screenshot of the details of a specific country_
 
