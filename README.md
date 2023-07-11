@@ -38,6 +38,10 @@ _Example screenshot of the details of a specific country_
 ## Contributing
 Contributions are welcome! If you find a bug or have a suggestion for improvement, please create an issue or submit a pull request.
 
+## Author
+- Avik Nayak
+- GitHub: __AvikNayak22__
+
 ## Acknowledgements
 - <a href="https://restcountries.com/" target="_blank"> REST Countries </a> for providing the country data API
 - <a href="https://react.dev/" target="_blank"> React </a> for the JavaScript library used to build the application
