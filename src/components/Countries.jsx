@@ -84,7 +84,7 @@ export default function Countries() {
           Loading...
         </h1>
       ) : (
-        <section className="container mx-auto p-8">
+        <section className="container mx-auto p-8 mt-12">
           {/* form */}
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-8">
             <form
