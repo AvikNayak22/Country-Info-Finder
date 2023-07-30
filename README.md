@@ -18,10 +18,10 @@ Country Info Finder is a web application that allows users to search for informa
 
 ## Installation
 
-1. Clone the repository: git clone https://github.com/AvikNayak22/Country-Info-Finder.git
-2. Navigate to the project directory: cd Country-Info-Finder
-3. Install the dependencies: npm install
-4. Start the development server: npm run dev
+1. Clone the repository: `git clone https://github.com/AvikNayak22/Country-Info-Finder.git`
+2. Navigate to the project directory: `cd Country-Info-Finder`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
 ## Demo Video
 
