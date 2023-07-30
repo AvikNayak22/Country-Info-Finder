@@ -23,7 +23,11 @@ Country Info Finder is a web application that allows users to search for informa
 3. Install the dependencies: npm install
 4. Start the development server: npm run dev
 
-## Screenshots
+## Demo Video
+
+
+https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/12030ecc-8fd1-4dd8-abca-945267969636
+
 
 **Screenshots 1**
 ![Screenshot 2023-07-10 221439](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/5a6106e2-85c1-44d6-9a8a-b847d1a57901)
