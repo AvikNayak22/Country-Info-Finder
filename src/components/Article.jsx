@@ -11,7 +11,7 @@ export default function Article({
   return (
     <>
       <Link to={`/${name.common}`}>
-        <article className="bg-[#F1F1F1] shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200 rounded-lg shadow overflow-hidden">
+        <article className="bg-[#FFFFFF] shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200 rounded-lg shadow overflow-hidden">
           <img src={flags.svg} alt="" className="md:h-72 w-full object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
