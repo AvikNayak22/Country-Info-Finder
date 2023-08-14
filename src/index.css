@@ -8,5 +8,5 @@ body {
   font-family: "Preahvihear", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @apply bg-[#ECEFF4] dark:bg-gray-900;
+  @apply bg-[#BEE3DB] dark:bg-gray-900;
 }
