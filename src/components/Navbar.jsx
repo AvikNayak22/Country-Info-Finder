@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="bg-[#051E34] text-white shadow-md dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav className="bg-[#FFFFFF] border-b-[1px] border-black  dark:bg-gray-900 fixed w-full z-20 top-0 left-0  dark:border-gray-600">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div href="#" className="flex items-center">
           <img
