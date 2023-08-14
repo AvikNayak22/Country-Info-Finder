@@ -25,7 +25,11 @@ Country Info Finder is a web application that allows users to search for informa
 
 ## Demo Video
 
-https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/12030ecc-8fd1-4dd8-abca-945267969636
+
+
+https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/2851295c-4641-4835-975b-4763047d2892
+
+
 
 
 ## Contributing
