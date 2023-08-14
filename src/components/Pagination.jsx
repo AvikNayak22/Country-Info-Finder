@@ -18,7 +18,7 @@ export default function Pagination({
               paginateBack();
             }}
             href="#"
-            className="relative inline-flex items-center px-2 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-[#E5E7EB] dark:bg-gray-800"
+            className="relative inline-flex items-center px-2 py-2 rounded-md border-[1px] border-black bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
           >
             <span>Previous</span>
           </a>
@@ -26,7 +26,7 @@ export default function Pagination({
             <p className="text-sm text-gray-700 px-4">
               Showing
               <span className="font-medium px-2">
-                {currentPage * postsPerPage - 9}
+                {currentPage * postsPerPage - 8}
               </span>
               to
               <span className="font-medium px-2">
@@ -42,7 +42,7 @@ export default function Pagination({
               paginateFront();
             }}
             href="#"
-            className="relative inline-flex items-center px-2 py-2 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-[#E5E7EB] dark:bg-gray-800"
+            className="relative inline-flex items-center px-2 py-2 rounded-md border-[1px] border-black bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
           >
             <span>Next</span>
           </a>
