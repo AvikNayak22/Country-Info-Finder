@@ -56,7 +56,7 @@ export default function SingleCountry() {
                     {item.borders.map((border, index) => (
                       <li
                         key={index}
-                        className="bg-white p-2 rounded text-xs tracking-wide shadow dark:bg-gray-800 dark:text-gray-400 text-gray-700"
+                        className="bg-white p-2 rounded text-xs border-[1px] border-black tracking-wide shadow dark:bg-gray-800 dark:text-gray-400 text-gray-700"
                       >
                         {border}
                       </li>
@@ -67,7 +67,7 @@ export default function SingleCountry() {
 
               <Link
                 to="/"
-                className="inline-block mt-8 bg-white py-2 px-6 rounded shadow text-gray-700 hover:bg-gray-200 transition-all duration-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-400"
+                className="inline-block mt-8 bg-white py-2 px-6 rounded border-[1px] border-black shadow text-gray-700 hover:bg-gray-200 transition-all duration-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-400"
               >
                 &larr; Back
               </Link>
