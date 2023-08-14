@@ -111,7 +111,7 @@ export default function Countries() {
                 required
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                className="py-3 px-4 text-gray-600 placeholder-gray-600 w-full shadow-inner rounded outline-none dark:text-gray-400 dark:placeholder-gray-400 dark:bg-gray-800 dark:focus:bg-gray-700 transition-all duration-200"
+                className="py-3 px-4 text-gray-600 placeholder-gray-600 w-full border-[1px] border-black rounded outline-none focus:shadow-lg dark:text-gray-400 dark:placeholder-gray-400 dark:bg-gray-800 dark:focus:bg-gray-700 transition-all duration-200"
               />
             </form>
 
@@ -119,7 +119,7 @@ export default function Countries() {
               <select
                 name="filter-by-region"
                 id="filter-by-region"
-                className="w-52 py-3 px-4 outline-none shadow-inner rounded text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:focus:bg-gray-700"
+                className="w-52 py-3 px-4 outline-none border-[1px] border-black rounded text-gray-600 dark:text-gray-400 dark:bg-gray-800 dark:focus:bg-gray-700"
                 value={regions.name}
                 onChange={(e) => filterByRegion(e.target.value)}
               >
