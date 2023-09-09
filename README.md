@@ -2,6 +2,11 @@
 
 Country Info Finder is a web application that allows users to search for information about countries. Users can view details such as population, region, subregion, and borders of a specific country. The application also provides the ability to filter countries by region and search for countries by name.
 
+## Demo Video
+
+
+https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/2851295c-4641-4835-975b-4763047d2892
+
 ## Features
 
 - Search for a country by name
@@ -23,23 +28,8 @@ Country Info Finder is a web application that allows users to search for informa
 3. Install the dependencies: `npm install`
 4. Start the development server: `npm run dev`
 
-## Demo Video
 
-
-
-https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/2851295c-4641-4835-975b-4763047d2892
-
-
-
-
-## Contributing
-Contributions are welcome! If you find a bug or have a suggestion for improvement, please create an issue or submit a pull request.
 
 ## Author
-- Avik Nayak
-- GitHub: __AvikNayak22__
+- **GitHub:** AvikNayak22
 
-## Acknowledgements
-- <a href="https://restcountries.com/" target="_blank"> REST Countries </a> for providing the country data API
-- <a href="https://react.dev/" target="_blank"> React </a> for the JavaScript library used to build the application
-- <a href="https://reactrouter.com/en/main" target="_blank"> React Router </a> for handling routing within the application
