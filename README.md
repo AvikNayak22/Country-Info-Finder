@@ -1,25 +1,23 @@
 # Country Info Finder
 
-Country Info Finder is a web application that allows users to search for information about countries. Users can view details such as population, region, subregion, and borders of a specific country. The application also provides the ability to filter countries by region and search for countries by name.
-
+Country Info Finder is a a web-based information portal focused on providing users with comprehensive information about countries worldwide.
 ## Demo Video
 
 
 https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/2851295c-4641-4835-975b-4763047d2892
 
-## Features
+## Key Features:
 
-- Search for a country by name
-- Filter countries by region
-- View details of a specific country, including its population, region, subregion, and borders
-- Navigate back to the list of countries
-- Responsive design for a seamless experience on different devices
+- **Search Functionality:** Enables users to search for specific countries by name, providing instant access to detailed information.
+- **Region-Based Filtering:** Allows users to filter countries by regions (e.g., Europe, Asia) for a more targeted exploration.
+- **Detailed Country Profiles:** Displays essential details such as population, capital, and bordering countries, enhancing users' understanding of each nation's characteristics.
 
-## Technologies Used
+## Tools and Technologies:
 
-- **React:** JavaScript library for building user interfaces
-- **React Router:** Library for handling routing within a React application
-- **REST Countries API:** API for retrieving country information
+- **Front-End Framework:** Developed using [React.js](https://react.dev/), a popular JavaScript library for building dynamic user interfaces.
+- **API Integration:** Integrated RESTful APIs (e.g., [restcountries.com](https://restcountries.com/)) to fetch real-time country data.
+- **Styling:** Employed [Tailwind CSS](https://tailwindcss.com/) for styling and responsive design, ensuring optimal user experience across various devices.
+- **Routing:** Utilized [React Router](https://reactrouter.com/en/main) for seamless navigation between different application views.
 
 ## Installation
 
