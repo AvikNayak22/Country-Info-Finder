@@ -4,7 +4,11 @@ Country Info Finder is a a web-based information portal focused on providing use
 ## Demo Video
 
 
-https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/2851295c-4641-4835-975b-4763047d2892
+
+
+https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/97954828-c4ab-4be3-91e3-9db458e04daa
+
+
 
 ## Key Features:
 
