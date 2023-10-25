@@ -10,7 +10,7 @@ export default function Article({
   return (
     <>
       <NavLink to={`/${name.common}`}>
-        <article className="bg-[#FFFFFF] border-[1px] border-black hover:border-[#9191E9] dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200 rounded-lg shadow-md overflow-hidden active:border-b-4 active:border-indigo-500">
+        <article className="bg-[#FFFFFF]  hover:bg-[#ececec] dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-200 rounded-lg shadow-md overflow-hidden active:border-b-4 active:border-indigo-500">
           <img src={flags.svg} alt="" className="md:h-72 w-full object-cover" />
           <div className="p-4">
             <h2 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
