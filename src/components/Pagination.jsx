@@ -1,3 +1,5 @@
+import {MdArrowBackIos,MdArrowForwardIos} from "react-icons/md"
+
 export default function Pagination({
   postsPerPage,
   totalPosts,
@@ -18,12 +20,12 @@ export default function Pagination({
               paginateBack();
             }}
             href="#"
-            className="relative inline-flex items-center px-2 py-2 rounded-md border-[1px] border-black bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
+            className="relative inline-flex items-center px-3 py-3 rounded-md shadow-md bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
           >
-            <span>Previous</span>
+            <span><MdArrowBackIos/></span>
           </a>
           <div>
-            <p className="text-sm text-gray-700 px-4">
+            <p className="text-sm text-[#2f2f36] px-4">
               Showing
               <span className="font-medium px-2">
                 {currentPage * postsPerPage - 8}
@@ -42,12 +44,13 @@ export default function Pagination({
               paginateFront();
             }}
             href="#"
-            className="relative inline-flex items-center px-2 py-2 rounded-md border-[1px] border-black bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
+            className="relative inline-flex items-center px-3 py-3 rounded-md shadow-md bg-white text-sm font-medium  hover:bg-[#E5E7EB] dark:bg-gray-800"
           >
-            <span>Next</span>
+            <span><MdArrowForwardIos/></span>
           </a>
         </nav>
       </div>
     </div>
   );
 }
+
