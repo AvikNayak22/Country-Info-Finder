@@ -1,9 +1,16 @@
 # Country Info Finder
 
 Country Info Finder is a a web-based information portal focused on providing users with comprehensive information about countries worldwide.
-## Demo Video
-[video (2).webm](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/1f443a18-ccc4-4844-b578-e6fa952c499e)
+## Screenshots
+### 1. Countries page
 
+![Web capture_30-12-2023_173532_localhost](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/8878a069-ec1f-4a6c-b2d7-ef3cbbf4bf13)
+
+<br/>
+
+### 2. Single Country page
+
+![Web capture_30-12-2023_191441_localhost](https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/55e37a2f-809d-4816-81cd-77deefe824de)
 
 
 
