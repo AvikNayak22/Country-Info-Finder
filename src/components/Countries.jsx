@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
+import swal from 'sweetalert';
+import ReactPaginate from 'react-paginate';
 import Article from "./Article";
-import Pagination from "./Pagination";
 
 export default function Countries() {
   const [countries, setCountries] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  
   const postsPerPage = 9;
   const regions = [
     {
@@ -51,6 +53,14 @@ export default function Countries() {
       const res = await fetch(
         `https://restcountries.com/v3.1/name/${searchText}`
       );
+      if (!res.ok) {
+        swal({
+          title: "Country does not exist.",
+          icon: "warning",
+        });
+        throw new Error("Country not found or request failed");
+      }
+  
       const data = await res.json();
       setCountries(data);
     } catch (error) {
@@ -84,9 +94,6 @@ export default function Countries() {
   const firstPostIndex = lastPostIndex - postsPerPage;
   const currentPosts = countries.slice(firstPostIndex, lastPostIndex);
 
-  // Change page
-  const paginateFront = () => setCurrentPage(currentPage + 1);
-  const paginateBack = () => setCurrentPage(currentPage - 1);
 
   return (
     <>
@@ -137,12 +144,20 @@ export default function Countries() {
               <Article key={country.name.common} {...country} />
             ))}
           </div>
-          <Pagination
-            postsPerPage={postsPerPage}
-            totalPosts={countries.length}
-            paginateBack={paginateBack}
-            paginateFront={paginateFront}
-            currentPage={currentPage}
+          <ReactPaginate
+            previousLabel={'previous'}
+            nextLabel={'next'}
+            breakLabel={'...'}
+            pageCount={Math.ceil(countries.length / postsPerPage)}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={5}
+            onPageChange={(selected) => setCurrentPage(selected.selected + 1)}
+            containerClassName={'flex justify-center items-center mt-8 p-4'}
+            pageClassName={"mx-1 px-4 py-2 bg-white border border-gray-300  rounded-full"}
+            previousLinkClassName={'px-4 py-2 bg-white border border-gray-300 rounded-full mr-2'}
+            nextLinkClassName={'px-4 py-2 bg-white border border-gray-300 rounded-full ml-2'}
+            disabledClassName={'text-gray-500 cursor-not-allowed'}
+            activeClassName={'bg-blue-500 text-white'}
           />
         </section>
       )}
