@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
-  font-family: 'Cinzel', serif;
+  font-family: 'Kanit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @apply bg-gradient-to-tr from-[#e3ffe7] from-0% to-[#d9e7ff] to-100% dark:bg-gray-900;

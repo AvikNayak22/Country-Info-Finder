@@ -1,9 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useParams } from "react-router-dom";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
 export default function SingleCountry() {
   const [country, setCountry] = useState([]);
   const { name } = useParams();
+  const mapRef = useRef(null);
 
   useEffect(() => {
     const getSingleCountry = async () => {
@@ -22,6 +25,25 @@ export default function SingleCountry() {
   useEffect(() => {
     document.title = `Countries | ${name}`;
   }, [name]);
+
+  useEffect(() => {
+    if (!mapRef.current) {
+      mapRef.current = L.map("map").setView([0, 0], 2);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+        mapRef.current
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    if (mapRef.current && country.length > 0) {
+      const { latlng } = country[0];
+      if (latlng && latlng.length === 2) {
+        mapRef.current.setView(latlng, 6);
+        L.marker(latlng).addTo(mapRef.current);
+      }
+    }
+  }, [country]);
 
   return (
     <>
@@ -47,16 +69,17 @@ export default function SingleCountry() {
                 <li>Subregion: {item.subregion}</li>
               </ul>
 
+
               {item.borders && (
                 <>
-                  <h3 className="text-gray-900 font-bold text-lg mb-2 dark:text-white">
-                    Borders:
+                  <h3 className="text-gray-900 font-bold text-lg mb-2 ">
+                    Borders :
                   </h3>
                   <ul className="flex flex-wrap items-start justify-start gap-2">
                     {item.borders.map((border) => (
                       <li
                         key={border.number}
-                        className="bg-white p-2 rounded text-xs tracking-wide shadow-md dark:bg-gray-800 dark:text-gray-400 text-gray-700"
+                        className="bg-white p-2 rounded text-xs tracking-wide shadow-md text-gray-700"
                       >
                         {border}
                       </li>
@@ -64,17 +87,26 @@ export default function SingleCountry() {
                   </ul>
                 </>
               )}
-
-              <Link
-                to="/"
-                className="inline-block mt-8 bg-white py-2 px-6 rounded  shadow-md text-gray-700 hover:bg-gray-200 transition-all duration-200 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-400"
-              >
-                &larr; Back
-              </Link>
             </article>
           </div>
         ))}
       </section>
+      {/* Map container */}
+      <section className="map-container">
+        <h2 className="text-gray-900 font-bold text-2xl mb-2 ml-8 md:ml-16 ">
+          Country Map :
+        </h2>
+        <div
+          id="map"
+          className="h-48 md:h-96 w-auto flex justify-center my-7 mx-8 md:mx-16 border border-gray-700"
+        ></div>
+      </section>
+      <Link
+        to="/"
+        className="inline-block mt-2 mb-11  ml-8 md:ml-16  bg-white py-2 px-6 rounded  shadow-md text-gray-700 hover:bg-gray-200 transition-all duration-200 "
+      >
+        &larr; Back
+      </Link>
     </>
   );
 }
