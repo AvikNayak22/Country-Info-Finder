@@ -1,6 +1,6 @@
 # Country Info Finder
 <p align="center">
-   <img src="https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/991d0221-377d-4165-a5e3-8c539e032208" alt="drawing" width="400" center/>
+   <img src="https://github.com/AvikNayak22/Country-Info-Finder/assets/110925067/991d0221-377d-4165-a5e3-8c539e032208" alt="drawing" width="300" center/>
 </p>
 
 Country Info Finder is a web application that allows users to explore information about various countries. Users can search for a specific country, filter by region, and view detailed information, including population, capital, and geographical location. The application also provides an interactive map to visualize the country's location.
